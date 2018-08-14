@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="frosh_performance.view_dir">%frosh_performance.plugin_dir%/Resources/views</parameter>
+        <parameter key="frosh_performance.smarty_dir">%frosh_performance.plugin_dir%/Resources/smarty</parameter>
+    </parameters>
+    <services>
+        <service id="frosh_performance.config" class="Shopware\Components\Plugin\CachedConfigReader">
+            <factory service="shopware.plugin.cached_config_reader" method="getByPluginName"/>
+            <argument type="string">FroshPerformance</argument>
+        </service>
+
+        <service id="frosh_performance.subscriber.http2" class="FroshPerformance\Subscriber\Http2PushSubscriber">
+            <argument type="service" id="frosh_performance.config"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
+        <service id="frosh_performance.subscriber.minify" class="FroshPerformance\Subscriber\MinifyHtmlSubscriber">
+            <argument type="service" id="frosh_performance.config"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
+        <service id="frosh_performance.subscriber.template" class="FroshPerformance\Subscriber\TemplateSubscriber">
+            <argument>%frosh_performance.view_dir%</argument>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
+        <service id="web_link_manager" class="FroshPerformance\Components\WebLinkManager">
+            <argument type="service" id="front"/>
+        </service>
+
+        <!-- Decorations -->
+        <service id="frosh_performance.components.theme.compiler" decorates="theme_compiler" class="FroshPerformance\Components\Theme\Compiler">
+            <argument>%shopware.app.rootdir%</argument>
+            <argument type="service" id="less_compiler" />
+            <argument type="service" id="theme_path_resolver" />
+            <argument type="service" id="theme_inheritance" />
+            <argument type="service" id="theme_service" />
+            <argument type="service" id="js_compressor" />
+            <argument type="service" id="events" />
+            <argument type="service" id="theme_timestamp_persistor" />
+            <argument type="service" id="shopware.release" />
+            <argument type="service" id="frosh_performance.config"/>
+        </service>
+
+        <service id="frosh_performance.components.cached_config_reader" class="FroshPerformance\Components\CachedConfigReader" decorates="shopware.plugin.cached_config_reader">
+            <argument type="service" id="frosh_performance.components.cached_config_reader.inner"/>
+            <argument type="service" id="cache"/>
+        </service>
+    </services>
+</container>
