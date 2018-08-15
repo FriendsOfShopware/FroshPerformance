@@ -9,7 +9,7 @@ use Zend_Cache_Core as Cache;
 /**
  * Class CachedConfigReader
  */
-class CachedConfigReader implements ConfigReader
+class CachedConfigReader extends \Shopware\Components\Plugin\CachedConfigReader
 {
     /**
      * @var ConfigReader
