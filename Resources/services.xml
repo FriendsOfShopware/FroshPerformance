@@ -51,5 +51,16 @@
             <argument type="service" id="frosh_performance.components.cached_config_reader.inner"/>
             <argument type="service" id="cache"/>
         </service>
+
+        <service id="frosh_performance.commands.purify_css_command" class="FroshPerformance\Commands\PurifyCssCommand">
+            <tag name="console.command" command="frosh:purify:css"/>
+        </service>
+
+        <service id="frosh_performance.components.purify_css" class="FroshPerformance\Components\PurifyCss">
+            <argument>%shopware.app.rootdir%</argument>
+            <argument type="service" id="theme_timestamp_persistor"/>
+            <argument type="service" id="theme_path_resolver"/>
+            <argument type="service" id="models"/>
+        </service>
     </services>
 </container>

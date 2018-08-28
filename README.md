@@ -12,6 +12,7 @@ Performance Improvments for Shopware
 * Minify Html Output
 * Http 2 Server Push [#1397](https://github.com/shopware/shopware/pull/1397)
 * Caching of plugin configuration
+* [Purify-CSS](https://github.com/purifycss/purifycss) Integration
 
 ## Requirements
 
