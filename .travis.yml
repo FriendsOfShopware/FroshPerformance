@@ -1,0 +1,27 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - 7.2
+  - 7.3
+  - nightly
+
+sudo: false
+
+services:
+  - mysql
+
+env:
+  global:
+    - PLUGIN_NAME=FroshWebP
+
+cache:
+  directories:
+    - "${HOME}/.composer/cache/files"
+
+install:
+  - composer install
+
+script:
+  - composer test
