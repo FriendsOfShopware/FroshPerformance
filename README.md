@@ -19,10 +19,21 @@ Performance Improvments for Shopware
 - min Shopware 5.4.0
 
 
-## Installation
+# Installation
 
-- Download latest release
-- Extract the zip file in `shopware_folder/custom/plugins/`
+## Zip Installation package for the Shopware Plugin Manager
+
+* Download the [latest plugin version](https://github.com/FriendsOfShopware/FroshPerformance/releases/latest/) (e.g. `FroshPerformance-1.0.0.zip`)
+* Upload and install plugin using Plugin Manager
+
+## Git Version
+* Checkout Plugin in `/custom/plugins/FroshPerformance`
+* Change to Directory and run `composer install` to install the dependencies
+* Install the Plugin with the Plugin Manager
+
+## Install with composer
+* Change to your root Installation of shopware
+* Run command `composer require frosh/performance` and install and active plugin with Plugin Manager 
 
 
 ## Contributing

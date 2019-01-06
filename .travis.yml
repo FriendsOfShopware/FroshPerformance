@@ -1,0 +1,32 @@
+language: php
+php:
+  - 7.2
+
+sudo: false
+
+services:
+  - mysql
+
+env:
+  global:
+    - PLUGIN_NAME=FroshPerformance
+
+cache:
+  directories:
+    - "${HOME}/.composer/cache/files"
+
+install:
+  - composer install
+
+script:
+  - "./build.sh $TRAVIS_TAG"
+
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: mBFlA3R3dj3SyR9bFXHyciINfTV6J7rhmtDh6QGG6WerrcJqKmwvHlSndoie7JhwpBjwxKIgBqfh/FnsP98pUN+6kzzY+aBUOZAe/uFgLGOe/PRML4C0SQPSFk+ZTUDTBSmSJYG6kz0xHg+zaBpPueInnT21smY8sT9gNb2UQzF7iFHnFMt5rtfLU9pJsIT4x3gkKFVZ84hNCaAFlsrxWWSiXXbaokpAwv1wP8bkyuz8gkaNm0gWGJnlQ7NSNxe/LyBEpmL4wRReC/tWLy0UqgVFoPF9HXxfYycaEuabwICmc6NBXJPimOHxZ+FMb0UXuoIWbgy4AsBDH4y2aUpyrugHsEdMLyT/tp42N0zDCwNQ6PwPmSoyHB2P8WU8wH0l3F+O46j44oyxmxJ4u71Di9HTgBqYD6ZJNO8PBkT/k1E7G6vrJ0tz/Vze5SO1mKvFrFFOXypkZD6/y664abopt92iWHXTNRJH1A5CFooSxEGYLhiKI4K8DC+jHHfICdbGKBeX6oPp4EbQxCoaETNbUcytVS/kxWfNmPNNNhRADBc/4/JCRtLhDJ7UTi2BIQ6atcuLWdPaTFW+SFuYkU442C6v3mlyCo3vskl+AYX6+Ntq6r00Sp7+8IzKhgbPIHqnIl0b48geKOxVKowZ3SXlTnP6P4B30+RqQSbUTodO9b8=
+  file: FroshPerformance*.zip
+  file_glob: true
+  on:
+    repo: FriendsOfShopware/FroshPerformance
