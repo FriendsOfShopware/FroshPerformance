@@ -31,8 +31,8 @@ class MinifyHtmlSubscriber implements SubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            'Enlight_Controller_Action_PreDispatch_Frontend' => 'onPreDispatch',
-            'Enlight_Controller_Action_PreDispatch_Widgets' => 'onPreDispatch',
+            'Enlight_Controller_Action_PostDispatch_Frontend' => 'onPreDispatch',
+            'Enlight_Controller_Action_PostDispatch_Widgets' => 'onPreDispatch',
         ];
     }
 
