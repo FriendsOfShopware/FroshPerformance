@@ -9,8 +9,8 @@ Performance Improvments for Shopware
 
 * Inline embedding modernizer
 * Removes Shopware Querystring from font
-* Minify Html Output
-* Http 2 Server Push [#1397](https://github.com/shopware/shopware/pull/1397)
+* Minify Html Output (Included with Shopware 5.6)
+* Http 2 Server Push (Included with Shopware 5.6)
 * Caching of plugin configuration
 * [Purify-CSS](https://github.com/purifycss/purifycss) Integration
 
