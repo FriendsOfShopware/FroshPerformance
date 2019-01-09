@@ -46,7 +46,7 @@ class CachedConfigReader extends \Shopware\Components\Plugin\CachedConfigReader
         $key = md5(json_encode([$pluginName, $shop]));
 
         if ($this->cache->test($key)) {
-            return $this->cache->load($key);
+            return $this->cache->load($key, true);
         }
 
         $config = $this->configReader->getByPluginName($pluginName, $shop);
