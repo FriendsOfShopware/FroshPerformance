@@ -5,16 +5,19 @@
         <element type="boolean">
             <name>http2Push</name>
             <label>Enable Http2 Push</label>
+            <label lang="de">Http2 Push aktivieren</label>
             <value>1</value>
         </element>
         <element type="boolean">
             <name>minifyHtml</name>
             <label>Enable Minify Html</label>
+            <label lang="de">Html Minifizieren aktivieren</label>
             <value>1</value>
         </element>
         <element type="boolean">
             <name>removeShopwareRevisionFromFont</name>
             <label>Remove shopware revision from font path</label>
+            <label lang="de">Shopware Revision aus der Font entfernen</label>
             <value>1</value>
         </element>
     </elements>
