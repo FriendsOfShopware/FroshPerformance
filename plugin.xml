@@ -12,7 +12,7 @@
     <description>Minify HTML output, Allow pushing resources using HTTP2 Push</description>
     <description lang="de">Komprimiert HTML, erlaubt die Nutzung mit HTTP2 Push</description>
 
-    <changelog>
+    <changelog version="1.0.2">
         <changes lang="en">Increased compability with Payment Provider Wirecard</changes>
         <changes lang="de">Support Verbessert mit Zahlungsanbieter Wirecard</changes>
     </changelog>
