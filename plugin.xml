@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Performance</label>
     <label lang="en">Performance</label>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <copyright>Friends of Shopware</copyright>
     <license>MIT</license>
     <link>https://friendsofshopware.github.io/</link>
@@ -11,4 +11,9 @@
     <compatibility minVersion="5.4.0"/>
     <description>Minify HTML output, Allow pushing resources using HTTP2 Push</description>
     <description lang="de">Komprimiert HTML, erlaubt die Nutzung mit HTTP2 Push</description>
+
+    <changelog>
+        <changes lang="en">Increased compability with Payment Provider Wirecard</changes>
+        <changes lang="de">Support Verbessert mit Zahlungsanbieter Wirecard</changes>
+    </changelog>
 </plugin>
