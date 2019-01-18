@@ -24,11 +24,6 @@
             <tag name="shopware.event_subscriber"/>
         </service>
 
-        <service id="frosh_performance.subscriber.template" class="FroshPerformance\Subscriber\TemplateSubscriber">
-            <argument>%frosh_performance.view_dir%</argument>
-            <tag name="shopware.event_subscriber"/>
-        </service>
-
         <service id="web_link_manager" class="FroshPerformance\Components\WebLinkManager">
             <argument type="service" id="front"/>
         </service>
