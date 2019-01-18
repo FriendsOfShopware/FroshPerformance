@@ -13,6 +13,14 @@ class MinifyHtmlSubscriber implements SubscriberInterface
     /**
      * @var array
      */
+    private $blackList = [
+        'sitemap',
+        'robots',
+    ];
+
+    /**
+     * @var array
+     */
     private $pluginConfig;
 
     /**
@@ -49,6 +57,13 @@ class MinifyHtmlSubscriber implements SubscriberInterface
 
         /** @var \Enlight_Controller_Action $controller */
         $controller = $args->getSubject();
+
+        foreach ($this->blackList as $blackList) {
+            if (stripos($controller->Request()->getControllerName(), $blackList) !== false) {
+                return;
+            }
+        }
+
 
         $controller->View()->Engine()->loadFilter('output', 'minify');
     }

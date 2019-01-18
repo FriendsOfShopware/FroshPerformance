@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Performance</label>
     <label lang="en">Performance</label>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <copyright>Friends of Shopware</copyright>
     <license>MIT</license>
     <link>https://friendsofshopware.github.io/</link>
@@ -15,5 +15,10 @@
     <changelog version="1.0.2">
         <changes lang="en">Increased compability with Payment Provider Wirecard</changes>
         <changes lang="de">Support Verbessert mit Zahlungsanbieter Wirecard</changes>
+    </changelog>
+
+    <changelog version="1.0.3">
+        <changes lang="en">Fixed CachedConfigReader with subshops, Sitemap and Robots.txt will be not more minify</changes>
+        <changes lang="de">CachedConfigReader behoben mit Subshops, Sitemap und Robots.txt wird nicht mehr minifiziert</changes>
     </changelog>
 </plugin>
