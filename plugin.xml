@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
-    <label lang="de">Performance</label>
-    <label lang="en">Performance</label>
+    <label lang="de">Performance Optimierungen</label>
+    <label lang="en">Performance Improvements</label>
     <version>1.0.3</version>
     <copyright>Friends of Shopware</copyright>
     <license>MIT</license>
