@@ -7,7 +7,6 @@ Performance Improvments for Shopware
 
 ### Features
 
-* Inline embedding modernizer
 * Removes Shopware Querystring from font
 * Minify Html Output (Included with Shopware 5.6)
 * Http 2 Server Push (Included with Shopware 5.6)

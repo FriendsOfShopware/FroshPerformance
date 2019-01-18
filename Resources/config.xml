@@ -4,8 +4,10 @@
     <elements>
         <element type="boolean">
             <name>http2Push</name>
-            <label>Enable Http2 Push</label>
-            <label lang="de">Http2 Push aktivieren</label>
+            <label>Enable HTTP/2 Push support</label>
+            <label lang="de">HTTP/2 Push aktivieren</label>
+            <description lang="en">Allow webservers and browsers to preload various resources. Available in server versions since Apache 2.4.17 and NGINX 1.13.9</description>
+            <description lang="de">Webservern und Browser erlauben, verschiedene Inhalte vorab zu laden. Unterstützt seid Apache 2.4.17 und NGINX 1.13.9</description>
             <value>1</value>
         </element>
         <element type="boolean">
