@@ -13,5 +13,8 @@
     },
     "suggest": {
         "frosh/webp": "Allows to generate thumbnails in webp"
+    },
+    "scripts": {
+        "test": "phpunit -c tests/ --colors=always"
     }
 }
