@@ -1,6 +1,9 @@
 # FroshPerformance
 
 [![Join the chat at https://gitter.im/FriendsOfShopware/Lobby](https://badges.gitter.im/FriendsOfShopware/Lobby.svg)](https://gitter.im/FriendsOfShopware/Lobby)
+[![Travis CI](https://travis-ci.org/FriendsOfShopware/FroshPerformance.svg?branch=master)](https://travis-ci.org/FriendsOfShopware/FroshPerformance)
+[![Download @ Community Store](https://img.shields.io/badge/endpoint.svg?url=https://frosh.shyim.de/FroshPerformance)](https://store.shopware.com/en/frosh31872894918f/performance-improvements.html)
+
 
 Performance Improvments for Shopware
 
