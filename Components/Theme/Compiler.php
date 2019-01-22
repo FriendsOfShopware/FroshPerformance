@@ -5,6 +5,7 @@ namespace FroshPerformance\Components\Theme;
 use Enlight_Event_EventManager;
 use Shopware;
 use Shopware\Components\Theme\Compiler as BaseCompiler;
+use Shopware\Components\Theme\Compressor\CompressorInterface;
 use Shopware\Components\Theme\Compressor\Js;
 use Shopware\Components\Theme\Inheritance;
 use Shopware\Components\Theme\LessCompiler;
@@ -42,7 +43,7 @@ class Compiler extends BaseCompiler
      * @param PathResolver                              $pathResolver
      * @param Inheritance                               $inheritance
      * @param Service                                   $service
-     * @param Js                                        $jsCompressor
+     * @param CompressorInterface                       $jsCompressor
      * @param Enlight_Event_EventManager                $eventManager
      * @param TimestampPersistor                        $timestampPersistor
      * @param Shopware\Components\ShopwareReleaseStruct $releaseStruct
@@ -54,7 +55,7 @@ class Compiler extends BaseCompiler
         PathResolver $pathResolver,
         Inheritance $inheritance,
         Service $service,
-        Js $jsCompressor,
+        CompressorInterface $jsCompressor,
         Enlight_Event_EventManager $eventManager,
         TimestampPersistor $timestampPersistor,
         Shopware\Components\ShopwareReleaseStruct $releaseStruct,
