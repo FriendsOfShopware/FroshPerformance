@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Performance Optimierungen</label>
     <label lang="en">Performance Improvements</label>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <copyright>Friends of Shopware</copyright>
     <license>MIT</license>
     <link>https://friendsofshopware.github.io/</link>
@@ -25,5 +25,10 @@
     <changelog version="1.0.4">
         <changes lang="en">Fixed compatibility to plugin DneCustomJsCss</changes>
         <changes lang="de">Kompatiblität zu DneCustomJsCss verbessert</changes>
+    </changelog>
+
+    <changelog version="1.0.5">
+        <changes lang="en">Improved compatibility with plugins and themes</changes>
+        <changes lang="de">Kompatiblität mit Plugins und Themes verbessert</changes>
     </changelog>
 </plugin>
