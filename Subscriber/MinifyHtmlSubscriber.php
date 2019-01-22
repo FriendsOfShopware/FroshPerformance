@@ -60,6 +60,7 @@ class MinifyHtmlSubscriber implements SubscriberInterface
 
         foreach ($this->blackList as $blackList) {
             if (stripos($controller->Request()->getControllerName(), $blackList) !== false) {
+                $controller->View()->Engine()->unloadFilter('output', 'minify');
                 return;
             }
         }

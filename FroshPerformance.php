@@ -7,6 +7,7 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
 }
 
 use FroshPerformance\Components\CompilerPass\AddTemplatePluginDirCompilerPass;
+use FroshPerformance\Components\CompilerPass\SetCustomTemplateManager;
 use Shopware\Components\Plugin;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -24,6 +25,7 @@ class FroshPerformance extends Plugin
     {
         parent::build($container);
         $container->addCompilerPass(new AddTemplatePluginDirCompilerPass());
+        $container->addCompilerPass(new SetCustomTemplateManager());
 
         $plugins = $container->getParameter('active_plugins');
 
