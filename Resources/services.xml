@@ -33,20 +33,6 @@
             <argument type="service" id="front"/>
         </service>
 
-        <!-- Decorations -->
-        <service id="frosh_performance.components.theme.compiler" decorates="theme_compiler" class="FroshPerformance\Components\Theme\Compiler">
-            <argument>%shopware.app.rootdir%</argument>
-            <argument type="service" id="less_compiler" />
-            <argument type="service" id="theme_path_resolver" />
-            <argument type="service" id="theme_inheritance" />
-            <argument type="service" id="theme_service" />
-            <argument type="service" id="js_compressor" />
-            <argument type="service" id="events" />
-            <argument type="service" id="theme_timestamp_persistor" />
-            <argument type="service" id="shopware.release" />
-            <argument type="service" id="frosh_performance.config"/>
-        </service>
-
         <service id="frosh_performance.components.cached_config_reader" class="FroshPerformance\Components\CachedConfigReader" decorates="shopware.plugin.cached_config_reader">
             <argument type="service" id="frosh_performance.components.cached_config_reader.inner"/>
             <argument type="service" id="cache"/>
