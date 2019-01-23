@@ -13,7 +13,7 @@ Performance Improvments for Shopware
 * Removes Shopware Querystring from font
 * Minify Html Output (Included with Shopware 5.6)
 * Http 2 Server Push (Included with Shopware 5.6)
-* Caching of plugin configuration
+* Caching of plugin configuration (Included with Shopware 5.6)
 * [Purify-CSS](https://github.com/purifycss/purifycss) Integration
 
 ## Requirements
