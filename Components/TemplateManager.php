@@ -39,6 +39,7 @@ class TemplateManager extends Enlight_Template_Manager
         foreach ($inheritance as $templateFolder) {
             if (basename($templateFolder) === 'Bare') {
                 $folders[] = dirname(__DIR__) . '/Resources/views';
+                $folders[] = dirname(__DIR__) . '/Resources/EmotionNoAjax';
                 $folders[] = $templateFolder;
             } else {
                 $folders[] = $templateFolder;

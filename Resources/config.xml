@@ -22,5 +22,11 @@
             <label lang="de">Shopware Revision aus der Font entfernen</label>
             <value>1</value>
         </element>
+        <element type="boolean">
+            <name>ajaxEmotionLoading</name>
+            <label>Load Emotion via Ajax (disabling recommended)</label>
+            <label lang="de">Lade Einkaufswelt via Ajax (deaktivieren empfohlen)</label>
+            <value>1</value>
+        </element>
     </elements>
 </config>

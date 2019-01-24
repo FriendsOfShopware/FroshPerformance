@@ -6,6 +6,7 @@
 
     <parameters>
         <parameter key="frosh_performance.view_dir">%frosh_performance.plugin_dir%/Resources/views</parameter>
+        <parameter key="frosh_performance.view_dir.emotion_no_ajax">%frosh_performance.plugin_dir%/Resources/EmotionNoAjax</parameter>
         <parameter key="frosh_performance.smarty_dir">%frosh_performance.plugin_dir%/Resources/smarty</parameter>
     </parameters>
     <services>
@@ -21,6 +22,13 @@
 
         <service id="frosh_performance.subscriber.minify" class="FroshPerformance\Subscriber\MinifyHtmlSubscriber">
             <argument type="service" id="frosh_performance.config"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+        
+        <service id="frosh_performance.subscriber.template" class="FroshPerformance\Subscriber\TemplateSubscriber">
+            <argument>%frosh_performance.view_dir.emotion_no_ajax%</argument>
+            <argument>%shopware.release.version%</argument>
+            <argument type="service" id="shopware.plugin.cached_config_reader"/>
             <tag name="shopware.event_subscriber"/>
         </service>
 
