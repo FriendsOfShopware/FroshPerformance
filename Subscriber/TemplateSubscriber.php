@@ -46,7 +46,7 @@ class TemplateSubscriber implements SubscriberInterface
         $this->emotionPreLoading = false;
 
         if (version_compare($this->version, '5.6.0', '<')) {
-            $this->emotionPreLoading = !$this->configReader->getByPluginName('FroshPerformance')['ajaxEmotionLoading'];
+            $this->emotionPreLoading = $this->configReader->getByPluginName('FroshPerformance')['NoAjaxEmotionLoading'];
         }
     }
 
