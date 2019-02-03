@@ -22,5 +22,12 @@
             <label lang="de">Shopware Revision aus der Font entfernen</label>
             <value>1</value>
         </element>
+        <element type="text">
+            <name>staticPrefixPath</name>
+            <label>Url prepended to relative JS- and CSS-Path</label>
+            <label lang="de">Voranstehende Url bei JS und CSS</label>
+            <description>f.e. while using CDN with alternative (Sub)Domain.</description>
+            <description lang="de">bspw. bei Verwendung von CDN mit alternativ (Sub)Domain</description>
+        </element>
     </elements>
 </config>
