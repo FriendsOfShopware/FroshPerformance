@@ -8,7 +8,7 @@
             <label lang="de">HTTP/2 Push aktivieren</label>
             <value>1</value>
             <description lang="en">Allow webservers and browsers to preload various resources. Available in server versions since Apache 2.4.17 and NGINX 1.13.9</description>
-            <description lang="de">Webservern und Browser erlauben, verschiedene Inhalte vorab zu laden. Unterstützt seid Apache 2.4.17 und NGINX 1.13.9</description>
+            <description lang="de">Webservern und Browser erlauben, verschiedene Inhalte vorab zu laden. Unterstützt seit Apache 2.4.17 und NGINX 1.13.9</description>
         </element>
         <element type="boolean">
             <name>minifyHtml</name>
@@ -27,6 +27,13 @@
             <label>Deactivate Ajax for Emotions</label>
             <label lang="de">Deaktiviere Nachladen der Einkaufswelten per Ajax</label>
             <value>0</value>
+        </element>
+        <element type="text">
+            <name>staticPrefixPath</name>
+            <label>Url prepended to relative JS- and CSS-Path</label>
+            <label lang="de">Voranstehende Url bei JS und CSS</label>
+            <description>f.e. while using CDN with alternative (Sub)Domain.</description>
+            <description lang="de">bspw. bei Verwendung von CDN mit alternativ (Sub)Domain</description>
         </element>
     </elements>
 </config>
