@@ -48,10 +48,6 @@ class WebLinkManager
             return $uri;
         }
 
-        if (strpos($uri, 'http') === 0) {
-            $uri = parse_url($uri, PHP_URL_PATH);
-        }
-
         $link = new Link($rel, $uri);
         foreach ($attributes as $key => $value) {
             $link = $link->withAttribute($key, $value);
