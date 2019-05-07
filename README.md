@@ -5,7 +5,7 @@
 [![Download @ Community Store](https://img.shields.io/badge/endpoint.svg?url=https://frosh.shyim.de/FroshPerformance)](https://store.shopware.com/en/frosh31872894918f/performance-improvements.html)
 
 
-Performance Improvments for Shopware
+Performance Improvements for Shopware
 
 
 ### Features
