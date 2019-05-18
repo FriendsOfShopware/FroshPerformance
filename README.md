@@ -7,6 +7,11 @@
 
 Performance Improvements for Shopware
 
+## Versions
+
+* FroshPerformance = Shopware 5
+* [FroshPlatformPerformance](https://github.com/FriendsOfShopware/FroshPlatformPerformance) = Shopware Platform
+
 
 ### Features
 
