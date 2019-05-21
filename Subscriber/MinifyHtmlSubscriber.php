@@ -16,6 +16,7 @@ class MinifyHtmlSubscriber implements SubscriberInterface
     private $blackList = [
         'sitemap',
         'robots',
+        'checkout',
     ];
 
     /**
