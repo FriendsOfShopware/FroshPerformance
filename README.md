@@ -1,4 +1,4 @@
-https://github.com/FriendsOfShopware/FroshPluginUploader# FroshPerformance
+# FroshPerformance
 
 [![Join the chat at https://gitter.im/FriendsOfShopware/Lobby](https://badges.gitter.im/FriendsOfShopware/Lobby.svg)](https://gitter.im/FriendsOfShopware/Lobby)
 [![Travis CI](https://travis-ci.org/FriendsOfShopware/FroshPerformance.svg?branch=master)](https://travis-ci.org/FriendsOfShopware/FroshPerformance)
