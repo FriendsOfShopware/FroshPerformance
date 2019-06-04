@@ -1,4 +1,4 @@
-# FroshPerformance
+https://github.com/FriendsOfShopware/FroshPluginUploader# FroshPerformance
 
 [![Join the chat at https://gitter.im/FriendsOfShopware/Lobby](https://badges.gitter.im/FriendsOfShopware/Lobby.svg)](https://gitter.im/FriendsOfShopware/Lobby)
 [![Travis CI](https://travis-ci.org/FriendsOfShopware/FroshPerformance.svg?branch=master)](https://travis-ci.org/FriendsOfShopware/FroshPerformance)
@@ -40,7 +40,7 @@ Performance Improvements for Shopware
 
 ## Install with composer
 * Change to your root Installation of shopware
-* Run command `composer require frosh/performance` and install and active plugin with Plugin Manager 
+* Run command `composer require frosh/performance` and install and activate the plugin in the Plugin Manager 
 
 
 ## Contributing
