@@ -40,7 +40,7 @@ Performance Improvements for Shopware
 
 ## Install with composer
 * Change to your root Installation of shopware
-* Run command `composer require frosh/performance` and install and active plugin with Plugin Manager 
+* Run command `composer require frosh/performance` and install and activate the plugin in the Plugin Manager 
 
 
 ## Contributing
