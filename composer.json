@@ -8,11 +8,7 @@
         "installer-name": "FroshPerformance"
     },
     "require": {
-        "symfony/web-link": "3.4.21",
         "composer/installers": "~1.0"
-    },
-    "require-dev": {
-        "shyim/shopware-event-fix": "^1.0"
     },
     "suggest": {
         "frosh/webp": "Allows to generate thumbnails in webp"
