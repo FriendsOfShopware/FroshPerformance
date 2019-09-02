@@ -78,8 +78,8 @@ class Compiler extends BaseCompiler
             $path = $this->shopwareRoot . '/web/cache/' . $fileName;
 
             $invalidQuerys = [
-                '?' . Shopware::REVISION,
-                '?#' . Shopware::REVISION,
+                '?' . Shopware()->Config()->revision,
+                '?#' . Shopware()->Config()->revision,
             ];
 
             if (file_exists($path)) {
